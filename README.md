@@ -11,6 +11,7 @@ This project implements a **QAM transmitter** using a **Root Raised Cosine (RRC)
 - `tb.v` – Testbench for RTL simulation
 - `rrc.ipynb` – Python verification using convolution
 - `latex.pdf` – decription in pdf format
+- `validation_report.pdf` – simulation result, waveform and validaion
 
 ---
 
