@@ -10,6 +10,7 @@ This project implements a **QAM transmitter** using a **Root Raised Cosine (RRC)
 - `sine_cos_rom.v` – ROM for sine/cosine QAM mapping
 - `tb.v` – Testbench for RTL simulation
 - `rrc.ipynb` – Python verification using convolution
+- `latex.pdf` – decription in pdf format
 
 ---
 
