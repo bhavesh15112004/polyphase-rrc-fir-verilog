@@ -1,7 +1,6 @@
 // =============================================================================
 // Project     : RRC-based QAM Transmitter with Polyphase FIR Filtering
 // Author      : Bhavesh Mali
-// Supervisor  : Rajshekhar Bhat
 // Description : This Verilog module implements a baseband QAM symbol generator
 //               with Root Raised Cosine (RRC) pulse shaping using a polyphase
 //               FIR filter. Symbol timing is adaptively recovered from
