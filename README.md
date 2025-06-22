@@ -41,5 +41,5 @@ This project implements a **QAM transmitter** using a **Root Raised Cosine (RRC)
 ## 📄 License
 
 MIT License  
-This project is developed by **Bhavesh Mali** under the guidance of **Rajshekhar Bhat 
+This project is developed by **Bhavesh Mali** .
 See `LICENSE` for details.
