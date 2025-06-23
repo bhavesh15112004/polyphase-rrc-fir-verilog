@@ -1,47 +1,73 @@
-# 🚀 RRC-based QAM Transmitter in Verilog
+# 🚀 Polyphase RRC-Based QAM Transmitter (Verilog + Python)
 
-This project implements a **QAM transmitter** using a **Root Raised Cosine (RRC) pulse shaping filter**, complete with symbol synchronization, polyphase interpolation, and testbench verification using Python.
-
----
-
-## 📦 Files Included
-
-- `main.v` – Main Verilog module (`rrc_fir`)
-- `sine_cos_rom.v` – ROM for sine/cosine QAM mapping
-- `tb.v` – Testbench for RTL simulation
-- `rrc.ipynb` – Python verification using convolution
-- `latex.pdf` – decription in pdf format
-- `validation_report.pdf` – simulation result, waveform and validaion
+This project implements a **QAM transmitter** with **Root Raised Cosine (RRC) pulse shaping**, featuring serial-to-parallel conversion, polyphase interpolation, and Python-based verification.
 
 ---
 
-## 🧠 Features
+## 📁 Project Structure
 
-- 📡 32-QAM Modulation (configurable)
-- 🔃 Serial to parallel conversion & QAM symbol mapping
-- 🎯 Adaptive symbol period estimation from input edge
-- 🧮 Root Raised Cosine (RRC) FIR filtering
-- 🧩 Polyphase interpolation
-- 🌀 Real + Imaginary (I/Q) signal generation
-- 🧪 Validated with Python convolution
-
----
-
-## 🛠️ How to Use
-
-1. Load the Verilog files (`main.v`, `sine_cos_rom.v`) into ModelSim/QuestaSim.
-2. Use `tb.v` to simulate.
-3. Open `rrc.ipynb` in Jupyter to verify output using Python.
+| File | Description |
+|------|-------------|
+| `main.v`              | Top-level Verilog module implementing QAM + RRC filtering |
+| `sine_cos_rom.v`      | ROM for sine/cosine lookup (used in QAM mapping) |
+| `tb.v`                | Testbench for simulating the full transmitter |
+| `rrc.ipynb`           | Python notebook for RRC coefficient generation and validation |
+| `latex.pdf`           | Full system explanation in PDF (generated via LaTeX) |
+| `validation_report.pdf` | Visual comparison of Python vs. Verilog waveforms |
 
 ---
 
-## 👤 Author 
+## 💡 Key Features
 
-- **Author**: Bhavesh Mali  
+- 🧊 **Configurable 32-QAM modulation**
+- ⏱️ **Adaptive symbol period estimation** (from edge detection)
+- 📶 **Serial-to-parallel data processing**
+- 📐 **Polyphase RRC FIR pulse shaping**
+- ♾️ **Real and Imaginary (I/Q) output generation**
+- 🔁 **Testbench-based RTL simulation**
+- ✅ **Python-based signal validation using convolution and plotting**
+
+---
+
+## ▶️ How to Run
+
+### 🔧 Verilog Simulation
+1. Open the project in **ModelSim**, **QuestaSim**, or any Verilog simulator.
+2. Load `main.v`, `sine_cos_rom.v`, and `tb.v`.
+3. Run the simulation and observe outputs (`real_out`, `imag_out`) via waveform viewer or file logging.
+
+### 🧪 Python Validation
+1. Open `rrc.ipynb` in Jupyter Notebook.
+2. Run the cells to:
+   - Generate RRC filter coefficients.
+   - Read Verilog simulation output.
+   - Compare it with Python-based filtered signal.
+
+---
+
+## 📷 Preview
+
+> Includes validation plot comparing Verilog vs Python output in `validation_report.pdf`.
+
+---
+
+## 👨‍💻 Author
+
+**Bhavesh Mali**  
+- [GitHub Profile](https://github.com/bhavesh15112004)  
+- Intern under guidance of Prof. Rajshekhar Bhat  
+- 2nd Year BTech, IIT Dharwad  
+
 ---
 
 ## 📄 License
 
-MIT License  
-This project is developed by **Bhavesh Mali** .
-See `LICENSE` for details.
+This project is licensed under the **MIT License**.  
+See `LICENSE` file for full details.
+
+---
+
+## 💬 Feedback
+
+Open to collaboration or suggestions — feel free to connect via GitHub.
+
