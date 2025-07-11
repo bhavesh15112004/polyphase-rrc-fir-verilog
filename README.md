@@ -55,7 +55,6 @@ This project implements a **QAM transmitter** with **Root Raised Cosine (RRC) pu
 
 **Bhavesh Mali**  
 - [GitHub Profile](https://github.com/bhavesh15112004)  
-- Intern under guidance of Prof. Rajshekhar Bhat  
 - 2nd Year BTech, IIT Dharwad  
 
 ---
